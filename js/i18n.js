@@ -1,7 +1,7 @@
 (function () {
   var text = {
     en: {
-      title_home: "Saltana — Real People. Real Voices.",
+      title_home: "Saltana — The meaning of real joy.",
       title_privacy: "Privacy Policy — Saltana",
       title_terms: "Terms of Use — Saltana",
       title_support: "Support — Saltana",
@@ -9,15 +9,15 @@
       nav_privacy: "Privacy",
       nav_terms: "Terms",
       nav_support: "Support",
-      hero_title: "Real People.<br><em>Real Voices.</em>",
-      hero_sub: "Meaningful Conversations.<br>Anytime, Anywhere.",
+      hero_title: "The meaning<br><em>of real joy.</em>",
+      hero_sub: "Music, ease,<br>and pure harmony.",
       alt_logo: "Saltana",
       alt_phone: "Saltana voice room on a phone",
       alt_apple: "Download on the App Store",
       alt_play: "Get it on Google Play"
     },
     ar: {
-      title_home: "سلطانة — أشخاص حقيقيون. أصوات حقيقية.",
+      title_home: "سلطانة — معنى المرح الحقيقي",
       title_privacy: "سياسة الخصوصية — سلطانة",
       title_terms: "شروط الاستخدام — سلطانة",
       title_support: "الدعم — سلطانة",
@@ -25,8 +25,8 @@
       nav_privacy: "الخصوصية",
       nav_terms: "الشروط",
       nav_support: "الدعم",
-      hero_title: "أشخاص حقيقيون.<br><em>أصوات حقيقية.</em>",
-      hero_sub: "محادثات لها معنى.<br>في أي وقت، ومن أي مكان.",
+      hero_title: "معنى<br><em>المرح الحقيقي</em>",
+      hero_sub: "طرب، وراحة،<br>وانسجام.",
       alt_logo: "سلطانة",
       alt_phone: "غرفة صوت سلطانة على الهاتف",
       alt_apple: "التنزيل من App Store",
