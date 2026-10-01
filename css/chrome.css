@@ -43,6 +43,7 @@ html[lang="ar"] body {
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 4px;
+  margin-inline-start: auto;
 }
 
 .menu a {

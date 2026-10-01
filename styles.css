@@ -120,7 +120,9 @@ main {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 0 5vw 11vh 7vw;
+  padding-top: 0;
+  padding-bottom: 11vh;
+  padding-inline: 7vw 5vw;
 }
 
 .brand {
@@ -178,22 +180,36 @@ h1 em {
 
 .stores img { height: 56px; width: auto; display: block; }
 
+.stage {
+  position: relative;
+  flex: 1 1 auto;
+  align-self: stretch;
+  min-width: 0;
+  margin-inline-end: -5vw;
+}
+
 .devices {
   position: absolute;
   z-index: 4;
-  inset-inline-start: 46%;
+  left: 50%;
+  right: auto;
   top: 42%;
   width: min(430px, 36vw);
   height: min(460px, calc(100dvh - 250px));
-  transform: translateY(-50%);
-  animation: float 6.5s ease-in-out infinite;
+  transform: translate(-50%, -50%);
+  animation: float-center 6.5s ease-in-out infinite;
 }
 
 .phone {
   position: absolute;
-  left: 0;
   top: 0;
-  height: min(100%, calc(100dvh - 430px));
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  width: auto;
+  max-width: 100%;
+  margin: auto;
   aspect-ratio: 253 / 421;
   filter: drop-shadow(0 22px 28px rgba(12, 4, 28, 0.55));
 }
@@ -440,6 +456,11 @@ html[dir="rtl"] .room { transform: translateX(-50%) scaleX(-1); }
   50% { transform: translateY(calc(-50% - 8px)); }
 }
 
+@keyframes float-center {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50% { transform: translate(-50%, calc(-50% - 8px)); }
+}
+
 .cast {
   position: absolute;
   z-index: 4;
@@ -476,11 +497,13 @@ html[dir="rtl"] .room { transform: translateX(-50%) scaleX(-1); }
     width: min(560px, 32vw);
     height: min(600px, calc(100dvh - 280px));
   }
+  .phone { height: 72%; }
 }
 
 @media (max-height: 760px) and (min-width: 901px) {
   .logo { width: min(300px, 28vw); margin-bottom: 1vh; }
   .devices { width: min(340px, 34vw); height: min(380px, calc(100dvh - 210px)); }
+  .phone { height: 70%; }
   .cast { width: 120px; top: 12vh; }
   .cast .row img { width: 26px; }
   h1 { font-size: clamp(28px, 3.8vw, 48px); }
@@ -497,12 +520,24 @@ html[dir="rtl"] .room { transform: translateX(-50%) scaleX(-1); }
     padding: 0 4vw 10vh 5vw;
   }
 
+  .stage { position: static; margin-inline-end: 0; }
+
   .brand {
     width: min(260px, 46%);
     text-align: start;
   }
 
-  .devices { inset-inline-start: 48%; width: min(220px, 42%); height: min(320px, calc(100dvh - 180px)); }
+  .devices {
+    left: auto;
+    right: auto;
+    inset-inline-start: 48%;
+    inset-inline-end: auto;
+    width: min(220px, 42%);
+    height: min(320px, calc(100dvh - 180px));
+    transform: translateY(-50%);
+    animation-name: float;
+  }
+  .phone { height: 100%; }
   .cast, .ribbons { display: none; }
 
   .logo { width: min(200px, 48vw); margin: 0 0 1vh; }
