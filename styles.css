@@ -201,6 +201,16 @@ h1 em {
   50% { transform: translateY(calc(-50% - 8px)); }
 }
 
+html[dir="rtl"] .phone {
+  transform: translateY(-50%) scaleX(-1);
+  animation-name: float-flip;
+}
+
+@keyframes float-flip {
+  0%, 100% { transform: translateY(-50%) scaleX(-1); }
+  50% { transform: translateY(calc(-50% - 8px)) scaleX(-1); }
+}
+
 @keyframes drift {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
