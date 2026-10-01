@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: #14091f;
+  color: #f6f1ff;
+  font-family: Outfit, "Segoe UI", sans-serif;
+}
+
+html[lang="ar"] body {
+  font-family: Tajawal, Outfit, sans-serif;
+}
+
+.topbar {
+  position: relative;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+  padding: 10px 4vw;
+}
+
+.home-mark {
+  display: flex;
+  align-items: center;
+  flex: none;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.home-mark img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.menu a {
+  color: #efe8ff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.menu a:hover { color: #ffd666; }
+
+.menu a[aria-current="page"] {
+  background: #ffd666;
+  color: #1e1235;
+}
+
+.langs {
+  display: flex;
+  margin-inline-start: 8px;
+  border: 1px solid rgba(212, 187, 255, 0.45);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.langs button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #d4bbff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 11px;
+  cursor: pointer;
+}
+
+.langs button[aria-pressed="true"] {
+  background: #ffd666;
+  color: #1e1235;
+}
+
+@media (max-width: 720px) {
+  .topbar { min-height: 54px; padding: 8px 3vw; gap: 8px; }
+  .home-mark img { height: 20px; }
+  .menu a { font-size: 12px; padding: 6px 8px; }
+  .langs { margin-inline-start: 4px; }
+  .langs button { font-size: 12px; padding: 6px 8px; }
+}

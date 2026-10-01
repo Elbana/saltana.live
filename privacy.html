@@ -5,12 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Saltana</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/chrome.css?v=2">
   <link rel="stylesheet" href="legal.css">
+  <script>
+    (function () {
+      if (localStorage.getItem("saltana-lang") === "ar") {
+        document.documentElement.lang = "ar";
+        document.documentElement.dir = "rtl";
+      }
+    })();
+  </script>
 </head>
-<body>
-  <article>
-    <a class="back" href="index.html">Saltana</a>
+<body data-page="privacy" data-title="title_privacy">
+  <header class="topbar">
+    <a class="home-mark" href="index.html"><img src="assets/wordmark.png?v=1" alt="Saltana"></a>
+    <nav class="menu">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="privacy.html" data-nav="privacy" data-i18n="nav_privacy">Privacy</a>
+      <a href="terms.html" data-nav="terms" data-i18n="nav_terms">Terms</a>
+      <a href="support.html" data-nav="support" data-i18n="nav_support">Support</a>
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en">EN</button>
+        <button type="button" data-set-lang="ar">عربي</button>
+      </div>
+    </nav>
+  </header>
+  <article data-panel="en">
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated 1 October 2026</p>
     <p>Saltana is a live voice and chat app for adults. This page explains what we collect and why. Contact <a href="mailto:support@saltana.live">support@saltana.live</a>.</p>
@@ -18,7 +41,7 @@
     <ul>
       <li>Account details you give us: username, email, and password.</li>
       <li>Profile details you choose to show: photo, bio, and display name.</li>
-      <li>Messages, posts, and voice while you are in a room. Voice is processed so the room can be heard. We use LiveKit to carry live audio.</li>
+      <li>Messages, posts, and voice while you are in a room. Voice is carried so people in the room can hear it. We use LiveKit for live audio.</li>
       <li>Purchase records for diamonds, gold, and VIP. Payments on Android are processed by Google Play.</li>
       <li>Device and app activity needed to keep the service working and to stop abuse.</li>
     </ul>
@@ -30,6 +53,32 @@
     <p>You can edit your profile in the app. You can delete the account from Settings. You can also email support@saltana.live and ask us to delete it. You may ask for a copy of your data or a correction.</p>
     <h2>Children</h2>
     <p>Saltana is not for anyone under 18. We do not knowingly collect information from children.</p>
+    <h2>Contact</h2>
+    <p>Privacy questions go to <a href="mailto:support@saltana.live">support@saltana.live</a>.</p>
   </article>
+  <article data-panel="ar" hidden>
+    <h1>سياسة الخصوصية</h1>
+    <p class="updated">آخر تحديث 1 أكتوبر 2026</p>
+    <p>سلطانة تطبيق محادثة صوتية للبالغين. توضح هذه الصفحة ما نجمعه ولماذا. للتواصل: <a href="mailto:support@saltana.live">support@saltana.live</a>.</p>
+    <h2>ماذا نجمع</h2>
+    <ul>
+      <li>بيانات الحساب التي تقدمها: اسم المستخدم، والبريد الإلكتروني، وكلمة المرور.</li>
+      <li>تفاصيل الملف التي تختار إظهارها: الصورة، والنبذة، والاسم الظاهر.</li>
+      <li>الرسائل والمنشورات والصوت أثناء وجودك في غرفة. يُنقل الصوت ليسمعه من في الغرفة. نستخدم LiveKit للصوت المباشر.</li>
+      <li>سجلات شراء الألماس والذهب وVIP. مدفوعات أندرويد تعالجها Google Play.</li>
+      <li>نشاط الجهاز والتطبيق اللازم لتشغيل الخدمة ومنع الإساءة.</li>
+    </ul>
+    <h2>كيف نستخدمها</h2>
+    <p>نستخدم هذه المعلومات لتشغيل الغرف والدردشة، وإظهار الملفات، وإتمام المشتريات، وإرسال رسائل الخدمة، وكشف الاحتيال أو الإساءة. لا نبيع المعلومات الشخصية.</p>
+    <h2>مدة الاحتفاظ</h2>
+    <p>نحتفظ ببيانات الحساب ما دام مفتوحًا. إذا حذفت حسابك يُغلق فورًا ويمكن استعادته بتسجيل الدخول خلال 30 يومًا. بعد 30 يومًا نحذف نهائيًا البريد واسم المستخدم وكلمة المرور ودخول الشبكات الاجتماعية وصورة الملف.</p>
+    <h2>خياراتك</h2>
+    <p>يمكنك تعديل ملفك داخل التطبيق. يمكنك حذف الحساب من الإعدادات. يمكنك أيضًا مراسلة support@saltana.live وطلب الحذف. يمكنك طلب نسخة من بياناتك أو تصحيحها.</p>
+    <h2>الأطفال</h2>
+    <p>سلطانة ليست لمن هم دون 18 عامًا. لا نجمع عن قصد معلومات من الأطفال.</p>
+    <h2>التواصل</h2>
+    <p>أسئلة الخصوصية إلى <a href="mailto:support@saltana.live">support@saltana.live</a>.</p>
+  </article>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

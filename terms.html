@@ -5,12 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terms of Use — Saltana</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/chrome.css?v=2">
   <link rel="stylesheet" href="legal.css">
+  <script>
+    (function () {
+      if (localStorage.getItem("saltana-lang") === "ar") {
+        document.documentElement.lang = "ar";
+        document.documentElement.dir = "rtl";
+      }
+    })();
+  </script>
 </head>
-<body>
-  <article>
-    <a class="back" href="index.html">Saltana</a>
+<body data-page="terms" data-title="title_terms">
+  <header class="topbar">
+    <a class="home-mark" href="index.html"><img src="assets/wordmark.png?v=1" alt="Saltana"></a>
+    <nav class="menu">
+      <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+      <a href="privacy.html" data-nav="privacy" data-i18n="nav_privacy">Privacy</a>
+      <a href="terms.html" data-nav="terms" data-i18n="nav_terms">Terms</a>
+      <a href="support.html" data-nav="support" data-i18n="nav_support">Support</a>
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en">EN</button>
+        <button type="button" data-set-lang="ar">عربي</button>
+      </div>
+    </nav>
+  </header>
+  <article data-panel="en">
     <h1>Terms of Use</h1>
     <p class="updated">Last updated 1 October 2026</p>
     <p>By creating a Saltana account you agree to these terms. Questions: <a href="mailto:support@saltana.live">support@saltana.live</a>.</p>
@@ -24,6 +47,26 @@
     <p>Diamonds, gold, and VIP are digital items for use inside Saltana. On Android they are sold by Google Play. They are not cash and cannot be withdrawn as money.</p>
     <h2>Closing an account</h2>
     <p>You can delete your account in Settings. It closes immediately. Sign in again within 30 days if you want it back. After 30 days the account and personal data are permanently deleted.</p>
+    <h2>Changes</h2>
+    <p>We may update these terms. The date at the top of this page is the date of the latest version.</p>
   </article>
+  <article data-panel="ar" hidden>
+    <h1>شروط الاستخدام</h1>
+    <p class="updated">آخر تحديث 1 أكتوبر 2026</p>
+    <p>بإنشاء حساب في سلطانة أنت توافق على هذه الشروط. للأسئلة: <a href="mailto:support@saltana.live">support@saltana.live</a>.</p>
+    <h2>من يمكنه استخدام سلطانة</h2>
+    <p>يجب أن يكون عمرك 18 عامًا على الأقل. أنت مسؤول عن النشاط على حسابك.</p>
+    <h2>محتواك</h2>
+    <p>تحتفظ بملكية ما تقوله وتنشره وتشاركه. تمنح سلطانة الإذن باستضافة هذا المحتوى حتى يعمل التطبيق. لا تنشر محتوى غير قانوني أو تهديدات أو محتوى جنسيًا يتعلق بمن هم دون 18 عامًا أو عمليات احتيال. قد نزيل المحتوى ونغلق الحسابات التي تخالف هذه القواعد.</p>
+    <h2>الغرف الصوتية والدردشة</h2>
+    <p>يسمعك الآخرون في الغرفة عندما يكون الميكروفون مفتوحًا. يمكنك حظر الأشخاص والإبلاغ عنهم داخل التطبيق.</p>
+    <h2>المشتريات</h2>
+    <p>الألماس والذهب وVIP عناصر رقمية للاستخدام داخل سلطانة. على أندرويد تبيعها Google Play. ليست نقدًا ولا يمكن سحبها كأموال.</p>
+    <h2>إغلاق الحساب</h2>
+    <p>يمكنك حذف حسابك من الإعدادات. يُغلق فورًا. سجّل الدخول مرة أخرى خلال 30 يومًا إذا أردت استعادته. بعد 30 يومًا يُحذف الحساب والبيانات الشخصية نهائيًا.</p>
+    <h2>التغييرات</h2>
+    <p>قد نحدّث هذه الشروط. التاريخ في أعلى الصفحة هو تاريخ آخر نسخة.</p>
+  </article>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

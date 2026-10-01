@@ -8,48 +8,70 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/chrome.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=12">
+  <script>
+    (function () {
+      if (localStorage.getItem("saltana-lang") === "ar") {
+        document.documentElement.lang = "ar";
+        document.documentElement.dir = "rtl";
+      }
+    })();
+  </script>
 </head>
-<body>
+<body data-page="home" data-title="title_home">
   <div class="page">
     <div class="sky" aria-hidden="true">
-      <div class="glow glow-left"></div>
-      <div class="glow glow-right"></div>
-      <img class="deco clouds-low" src="assets/clouds-low.png" alt="">
-      <img class="deco clouds" src="assets/clouds.png" alt="">
-      <img class="deco wave wave-1" src="assets/wave-1.png" alt="">
-      <img class="deco wave wave-2" src="assets/wave-2.png" alt="">
-      <img class="deco spark s1" src="assets/spark.png" alt="">
-      <img class="deco spark s2" src="assets/spark.png" alt="">
-      <img class="deco spark s3" src="assets/spark-sm.png" alt="">
+      <div class="glow glow-phone"></div>
+      <div class="glow glow-gold"></div>
+      <div class="stars"></div>
+      <img class="spark a" src="assets/spark.png" alt="">
+      <img class="spark b" src="assets/spark.png" alt="">
+      <img class="spark c" src="assets/spark-sm.png" alt="">
+      <img class="spark d" src="assets/spark-sm.png" alt="">
+      <div class="cloud-band">
+        <img src="assets/clouds-low.png" alt="">
+        <img src="assets/clouds.png" alt="">
+        <img src="assets/clouds-low.png" alt="">
+      </div>
+      <div class="lines">
+        <img src="assets/wave-1.png" alt="">
+        <img src="assets/wave-2.png" alt="">
+      </div>
     </div>
 
-    <header>
-      <img class="logo" src="assets/logo.png" alt="Saltana">
-      <nav>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+    <header class="topbar">
+      <a class="home-mark" href="index.html"><img src="assets/wordmark.png?v=1" alt="Saltana"></a>
+      <nav class="menu">
+        <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+        <a href="privacy.html" data-nav="privacy" data-i18n="nav_privacy">Privacy</a>
+        <a href="terms.html" data-nav="terms" data-i18n="nav_terms">Terms</a>
+        <a href="support.html" data-nav="support" data-i18n="nav_support">Support</a>
+        <div class="langs" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en">EN</button>
+          <button type="button" data-set-lang="ar">عربي</button>
+        </div>
       </nav>
     </header>
 
     <main>
-      <div class="copy">
-        <h1>Real People.<br><em>Real Voices.</em></h1>
-        <p class="sub">Meaningful Conversations.<br>Anytime, Anywhere.</p>
+      <section class="brand">
+        <img class="logo" src="assets/logo.png?v=4" alt="Saltana" data-i18n-alt="alt_logo">
+        <h1 data-i18n-html="hero_title">Real People.<br><em>Real Voices.</em></h1>
+        <p data-i18n-html="hero_sub">Meaningful Conversations.<br>Anytime, Anywhere.</p>
         <div class="stores">
           <a href="https://apps.apple.com/app/saltana">
-            <img src="assets/app-store.png" alt="Download on the App Store">
+            <img src="assets/app-store.png?v=2" alt="Download on the App Store" data-i18n-alt="alt_apple">
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.saltana.app">
-            <img src="assets/google-play.png" alt="Get it on Google Play">
+            <img src="assets/google-play.png?v=2" alt="Get it on Google Play" data-i18n-alt="alt_play">
           </a>
         </div>
-      </div>
-      <div class="phone-wrap">
-        <img class="phone" src="assets/phone.png" alt="Saltana voice room">
-      </div>
+      </section>
+      <img class="phone" src="assets/phone.png?v=9" alt="Saltana voice room on a phone" data-i18n-alt="alt_phone">
     </main>
   </div>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
