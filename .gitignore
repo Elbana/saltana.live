@@ -1,0 +1,6 @@
+node_modules/
+package.json
+package-lock.json
+scripts/
+assets/_parts/
+assets/*-2x.png
