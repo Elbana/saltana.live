@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/chrome.css?v=3">
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=42">
   <script>
     (function () {
       if (localStorage.getItem("saltana-lang") === "ar") {
@@ -26,18 +26,12 @@
       <div class="glow glow-phone"></div>
       <div class="glow glow-gold"></div>
       <div class="stars"></div>
-      <img class="spark a" src="assets/spark.png" alt="">
-      <img class="spark b" src="assets/spark.png" alt="">
-      <img class="spark c" src="assets/spark-sm.png" alt="">
-      <img class="spark d" src="assets/spark-sm.png" alt="">
+      <img class="spark a" src="assets/spark.png?v=2" alt="">
+      <img class="spark b" src="assets/spark-c.png" alt="">
+      <img class="spark c" src="assets/spark-sm.png?v=2" alt="">
+      <img class="spark d" src="assets/spark-d.png" alt="">
       <div class="cloud-band">
-        <img src="assets/clouds-low.png" alt="">
-        <img src="assets/clouds.png" alt="">
-        <img src="assets/clouds-low.png" alt="">
-      </div>
-      <div class="lines">
-        <img src="assets/wave-1.png" alt="">
-        <img src="assets/wave-2.png" alt="">
+        <img src="assets/cloud-band.png?v=5" alt="">
       </div>
     </div>
 
@@ -56,19 +50,54 @@
 
     <main>
       <section class="brand">
-        <img class="logo" src="assets/logo.png?v=4" alt="Saltana" data-i18n-alt="alt_logo">
+        <img class="logo" src="assets/logo.png?v=5" alt="Saltana" data-i18n-alt="alt_logo">
+        <img class="headline" src="assets/headline.png" alt="Real People. Real Voices.">
         <h1 data-i18n-html="hero_title">Real People.<br><em>Real Voices.</em></h1>
         <p data-i18n-html="hero_sub">Meaningful Conversations.<br>Anytime, Anywhere.</p>
         <div class="stores">
           <a href="https://apps.apple.com/app/saltana">
-            <img src="assets/app-store.png?v=2" alt="Download on the App Store" data-i18n-alt="alt_apple">
+            <img src="assets/app-store.png?v=3" alt="Download on the App Store" data-i18n-alt="alt_apple">
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.saltana.app">
-            <img src="assets/google-play.png?v=2" alt="Get it on Google Play" data-i18n-alt="alt_play">
+            <img src="assets/google-play.png?v=3" alt="Get it on Google Play" data-i18n-alt="alt_play">
           </a>
         </div>
       </section>
-      <img class="phone" src="assets/phone.png?v=9" alt="Saltana voice room on a phone" data-i18n-alt="alt_phone">
+      <div class="devices">
+        <div class="phone">
+          <img class="bezel" src="assets/live/phone.png?v=1" alt="Saltana voice room on a phone" data-i18n-alt="alt_phone">
+          <div class="screen" aria-hidden="true">
+            <div class="hud">
+              <img src="assets/live/speaker.png?v=1" alt="">
+              <img src="assets/live/menu.png?v=1" alt="">
+            </div>
+            <div class="room"><b>Chill Vibes</b><span>8 people</span></div>
+            <img class="seat s1" src="assets/live/ava2.png?v=1" alt="">
+            <img class="seat s2" src="assets/live/ava3.png?v=1" alt="">
+            <img class="seat s3" src="assets/live/ava3.png?v=1" alt="">
+            <img class="seat s4" src="assets/live/ava2.png?v=1" alt="">
+            <span class="eq left">
+              <i></i><i></i><i></i><i></i><i></i>
+            </span>
+            <span class="eq right">
+              <i></i><i></i><i></i><i></i>
+            </span>
+            <div class="hero">
+              <i></i>
+              <img src="assets/live/ava1.png?v=1" alt="">
+            </div>
+            <div class="dock">
+              <img src="assets/live/people.png?v=1" alt="">
+              <div class="mic">
+                <i></i>
+                <i></i>
+                <img src="assets/live/mic.png?v=1" alt="">
+              </div>
+              <span class="more"><i></i><i></i><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
   <script src="js/i18n.js"></script>
