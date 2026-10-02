@@ -197,7 +197,6 @@ h1 em {
   width: min(430px, 36vw);
   height: min(460px, calc(100dvh - 250px));
   transform: translate(-50%, -50%);
-  animation: float-center 6.5s ease-in-out infinite;
 }
 
 .phone {
@@ -459,16 +458,6 @@ html[dir="rtl"] .phone { transform: scaleX(-1); }
 
 html[dir="rtl"] .room { transform: translateX(-50%) scaleX(-1); }
 
-@keyframes float {
-  0%, 100% { transform: translateY(-50%); }
-  50% { transform: translateY(calc(-50% - 8px)); }
-}
-
-@keyframes float-center {
-  0%, 100% { transform: translate(-50%, -50%); }
-  50% { transform: translate(-50%, calc(-50% - 8px)); }
-}
-
 .cast {
   position: absolute;
   z-index: 4;
@@ -543,7 +532,6 @@ html[dir="rtl"] .room { transform: translateX(-50%) scaleX(-1); }
     width: min(220px, 42%);
     height: min(320px, calc(100dvh - 180px));
     transform: translateY(-50%);
-    animation-name: float;
   }
   .phone { height: 100%; }
   .cast, .ribbons { display: none; }
