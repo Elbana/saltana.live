@@ -243,14 +243,22 @@ h1 em {
 
 .hud {
   position: absolute;
-  top: 0;
-  right: 4%;
+  top: 5cqw;
+  right: 16cqw;
   display: flex;
-  gap: 4px;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5cqw;
   z-index: 2;
 }
 
-.hud img { width: 18px; height: auto; display: block; }
+.hud img {
+  width: 12cqw;
+  height: 12cqw;
+  flex: 0 0 auto;
+  object-fit: contain;
+  display: block;
+}
 
 .room {
   position: absolute;
