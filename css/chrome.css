@@ -32,7 +32,7 @@ html[lang="ar"] body {
 }
 
 .home-mark img {
-  height: 26px;
+  height: 42px;
   width: auto;
   display: block;
 }
@@ -89,7 +89,7 @@ html[lang="ar"] body {
 
 @media (max-width: 720px) {
   .topbar { min-height: 54px; padding: 8px 3vw; gap: 8px; }
-  .home-mark img { height: 20px; }
+  .home-mark img { height: 34px; }
   .menu a { font-size: 12px; padding: 6px 8px; }
   .langs { margin-inline-start: 4px; }
   .langs button { font-size: 12px; padding: 6px 8px; }
